@@ -125,7 +125,7 @@ export default {
             <p>
               DGtek currently provides ultra-fast, direct fibre service to homes and businesses across Melbourne CBD and South-East suburbs – Port/South Melbourne, St Kilda, Elwood, Bentleigh and Moorabbin.
             </p>
-            <a href="#footer">DGtek</a>
+            <a href="https://dgtek.net/" target="_blank">Check your address</a>
             </div>`
         }
       ]

@@ -7,7 +7,8 @@
         </v-card-title>
         <v-card-text>
           <h5>We started building our fibre-to-the-home network in 2016.<br>
-            In all this time, we have maintained 99.9% uptime and have never delivered a speed below what we promised to a customer.</h5>
+            In all this time, we have maintained 99.9% uptime and have never delivered a speed below what we promised to a customer.
+          </h5>
         </v-card-text>
       </v-card>
       <v-container fluid>
@@ -27,14 +28,15 @@
                     shaped
                     elevation="10"
                     class="cards mx-auto px-6 px-xs-4"
-                    :style="{ marginTop: cardsMarginTop }"
+                    :style="{ marginTop: cardsMarginTop, height: cardHeight, width: cardWidth }"
                 >
                   <v-img
                       class="red-icons"
                       :src="card.image"
                       :width="iconSize"
                       :height="iconSize"
-                      contain position="left"
+                      contain
+                      position="left"
                   ></v-img>
                   <h3>{{ card.title }}</h3>
                   <v-card-text>
@@ -82,8 +84,8 @@ p {
 
 .cards {
   border-radius: 15px;
-  width: 380px;
-  height: 400px;
+  /* width: 380px;
+  height: 400px; */
   padding-top: 20px;
 }
 .red-icons {
@@ -123,12 +125,12 @@ p {
     max-width: 80%;
     margin-left: 10%;
   }
-  .cards {
+  /* .cards {
     width: 90%;
     height: max-content;
     padding-top: 20px;
 
-  }
+  } */
   .red-icons, h3 {
     display: inline-block;
   }
@@ -152,8 +154,8 @@ p {
     line-height: 32px;
   }
   .cards {
-    width: 98%;
-    height: max-content;
+    /* width: 98%; */
+    /* height: max-content; */
   }
   .red-icons, h3 {
     display: inline-block;
@@ -203,23 +205,26 @@ export default {
     }
   },
   computed: {
-    fullHeight () {
-      return this.viewport.width >= 1140 ? '766px' : '1045px'
-    },
     backgroundHeight () {
-      return this.viewport.width >= 1140 ? '635px' : '955px'
+      return this.viewport.width <= 320 ? '1100px' : this.viewport.width <= 360 ? '1000' : this.viewport.width >= 1264 ? '635px' : '1040px'
     },
     whiteTextMarginTop () {
-      return this.viewport.width >= 1140 ? '-580px' : '-900px'
+      return this.viewport.width <= 320 ? '-1050px' : this.viewport.width <= 360 ? '-950px' : this.viewport.width >= 1264 ? '-580px' : '-1000px'
     },
     whiteTextMarginLeft () {
-      return this.viewport.width >= 1140 ? '380px' : '100px'
+      return this.viewport.width >= 1264 ? '380px' : '100px'
     },
     cardsMarginTop () {
-      return this.viewport.width > 1140 ? '40px' : '0px'
+      return this.viewport.width >= 1264 ? '40px' : '0px'
+    },
+    cardHeight () {
+      return this.viewport.width >= 1264 ? '400px' : 'max-content'
+    },
+    cardWidth () {
+      return this.viewport.width >= 1264 ? '400px' : '320px'
     },
     iconSize () {
-      return this.viewport.width > 1140 ? '51px' : '32px'
+      return this.viewport.width >= 1264 ? '51px' : '32px'
     }
   },
   methods: {
