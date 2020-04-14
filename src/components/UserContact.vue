@@ -161,6 +161,12 @@ export default {
           color: '',
           validationIcon: '',
           validator () { this.error = this.value.length < 5 }
+        },
+        phone: {
+          value: '',
+          placeholder: 'Phone',
+          error: false,
+          color: ''
         }
       }
     }
@@ -179,6 +185,7 @@ export default {
       this.message = ''
     },
     validate (item) {
+      if (!item.validator) return
       item.validator()
       item.validationIcon = item.error ? '$invalid' : '$valid'
       item.color = item.error ? this.errorColor : this.normalColor

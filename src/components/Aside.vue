@@ -15,7 +15,10 @@
             </p>
           </v-card-text>
           <v-card-text>
-            <p style="margin-left: 0!important"><b>Exactly what’s on offer:</b></p>
+            <p style="margin-left: 0!important">
+              <b>Exactly what’s on offer:</b>
+            </p>
+            <h5>500/500 Mbps</h5>
             <h5>6 months <span class="red--text">of free internet*</span></h5>
             <h5>3 months <span class="red--text">of free internet**</span></h5>
           </v-card-text>
