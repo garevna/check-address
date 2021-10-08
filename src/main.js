@@ -12,6 +12,18 @@ import './registerServiceWorker'
 
 Vue.config.productionTip = false
 
+window[Symbol.for('portal.api.host')] = process.env.NODE_ENV === 'production' ? 'https://portal.dgtek.net' : 'https://dgtek-staging.herokuapp.com'
+
+window[Symbol.for('global.addressData')] = {
+  buildingId: null,
+  address: '',
+  addressComponents: {},
+  coordinates: [],
+  estimatedServiceDeliveryTime: '',
+  buildingName: '',
+  uniqueCode: ''
+}
+
 const vue = new Vue({
   vuetify,
   render: h => h(App)

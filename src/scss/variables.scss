@@ -1,24 +1,34 @@
-$body-font-family: 'Gilroy';
+$body-font-family: 'Opinion';
 $heading-font-family: $body-font-family !default;
 $headings: (
   'h1': (
     'size': 46px,
-    'line-height': 150%
+    'line-height': 150%,
+    'font-family': 'Opinion',
+    'font-weight': 'bold'
   ),
   'h2': (
     'size': 32px,
-    'line-height': 150%
+    'line-height': 150%,
+    'font-family': 'Opinion',
+    'font-weight': 'bold'
   ),
   'h3': (
     'size': 28px,
-    'line-height': 150%
+    'line-height': 150%,
+    'font-family': 'Opinion',
+    'font-weight': 'bold'
   ),
   'h4': (
     'size': 24px,
-    'line-height': 100%
+    'line-height': 100%,
+    'font-family': 'Opinion',
+    'font-weight': 'bold'
   ),
   'h5': (
     'size': 18px,
-    'line-height': 100%
+    'line-height': 100%,
+    'font-family': 'Opinion',
+    'font-weight': 'bold'
   )
 );

@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Opinion';
+  word-break: normal;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 150%;
+  font-weight: 200;
+  letter-spacing: 0.08rem;
+  color: #fff;
+}
+h2 {
+  font-size: 42px;
+  line-height: 150%;
+  font-weight: 100;
+  letter-spacing: 0.05rem;
+  color: #000;
+}
+h3 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: 100;
+  letter-spacing: 0.04rem;
+  color: #000;
+}
+h4 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 0.02rem;
+  color: #000;
+  line-height: 150%;
+}
+h5 {
+  font-size: 24px;
+  line-height: 150%;
+  font-weight: medium;
+}
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #665566;
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 36px;
+    letter-spacing: 0.02rem;
+  }
+  h2 { font-size: 28px; }
+  h3 { font-size: 24px; }
+  h4, h5 { font-size: 18px; }
+  p { font-size: 16px; }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #E5E5E5;
+}
+::-webkit-scrollbar-thumb {
+  background: #900;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #977;
+}

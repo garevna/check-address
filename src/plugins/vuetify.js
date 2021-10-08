@@ -17,19 +17,19 @@ export default new Vuetify({
   theme: {
     themes: {
       light: {
-        primary: '#FF0E00',
+        primary: '#900',
         secondary: '#E82F37',
-        buttons: '#F54436',
-        homefone: '#FEFEFE',
+        buttons: '#900',
+        homefone: '#fbfbfb',
         inputs: '#EFEFEF',
         activefield: '#D9D9D9',
         warning: '#FAFF00'
       },
       dark: {
-        primary: '#FF0E00',
+        primary: '#900',
         secondary: '#E82F37',
-        buttons: '#F54436',
-        homefone: '#FEFEFE',
+        buttons: '#900',
+        homefone: '#fbfbfb',
         fields: '#EFEFEF',
         activefield: '#D9D9D9',
         warning: '#FAFF00'
