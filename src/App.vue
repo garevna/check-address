@@ -9,7 +9,7 @@
         width="140"
         class="ma-auto"
         style="cursor: pointer; max-height: 100px; max-width: 140px;"
-        @click="clickHandler('http://project4356245.tilda.ws/')"
+        @click="clickHandler('https://dgtek.net')"
       />
     </div>
 
