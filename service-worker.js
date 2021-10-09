@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.cfb3a93bf752d3a9b7c3eb831abc7e8b.js"
+  "/dgtek-check-address/precache-manifest.9801cbaab7262dbd8913bd3e25477974.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "dgtek-check-address"});
